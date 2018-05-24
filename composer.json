@@ -1,0 +1,16 @@
+{
+    "name": "utklasad/adminproductgridcategorygilter",
+    "require": {
+    },
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "description": "Category filter in admin product grid for Magento 2.",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Utklasad\\AdminProductGridCategoryFilter\\": ""
+        }
+    }
+}
