@@ -2,19 +2,22 @@
 
 namespace Utklasad\AdminProductGridCategoryFilter\Model\Category;
 
-class CategoryList implements \Magento\Framework\Option\ArrayInterface
+use Magento\Framework\Option\ArrayInterface;
+use Magento\Catalog\Model\ResourceModel\Category\CollectionFactory;
+
+class CategoryList implements ArrayInterface
 {
+    protected $_categoryCollectionFactory;
+
     public function __construct(
-        \Magento\Catalog\Model\ResourceModel\Category\CollectionFactory $collectionFactory
+        CollectionFactory $collectionFactory
     ) {
         $this->_categoryCollectionFactory = $collectionFactory;
     }
     
     public function toOptionArray($addEmpty = true)
     {
-        $collection = $this->_categoryCollectionFactory->create();
-        $collection->addAttributeToSelect('name');
-        $collection->setOrder('name', 'ASC');
+        $categoryCollection = $this->_categoryCollectionFactory->create()->addAttributeToSelect('name')->setOrder('name', 'ASC');
 
         $options = [];
 
@@ -22,7 +25,7 @@ class CategoryList implements \Magento\Framework\Option\ArrayInterface
             $options[] = ['label' => __('-- Please Select a Category --'), 'value' => ''];
         }
 
-        foreach ($collection as $category) {
+        foreach ($categoryCollection as $category) {
             $options[] = ['label' => $category->getName(), 'value' => $category->getId()];
         }
 

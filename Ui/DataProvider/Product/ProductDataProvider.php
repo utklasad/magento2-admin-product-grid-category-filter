@@ -2,9 +2,12 @@
 
 namespace Utklasad\AdminProductGridCategoryFilter\Ui\DataProvider\Product;
 
-class ProductDataProvider extends \Magento\Catalog\Ui\DataProvider\Product\ProductDataProvider
+use Magento\Catalog\Ui\DataProvider\Product\ProductDataProvider as MagentoProductDataProvider;
+use Magento\Framework\Api\Filter;
+
+class ProductDataProvider extends MagentoProductDataProvider
 {
-    public function addFilter(\Magento\Framework\Api\Filter $filter)
+    public function addFilter(Filter $filter)
     {
         if ($filter->getField() == 'category_id') {
             $this->getCollection()->addCategoriesFilter(array('in' => $filter->getValue()));
