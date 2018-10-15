@@ -4,7 +4,7 @@
    <columns name="product_columns" class="Magento\Catalog\Ui\Component\Listing\Columns">
       <column name="category_id" class="Utklasad\AdminProductGridCategoryFilter\Ui\Component\Listing\Column\Category">
          <argument name="data" xsi:type="array">
-            <item name="options" xsi:type="object">Utklasad\AdminProductGridCategoryFilter\Model\Category\Categorylist</item>
+            <item name="options" xsi:type="object">Utklasad\AdminProductGridCategoryFilter\Model\Category\CategoryList</item>
             <item name="config" xsi:type="array">
                <item name="filter" xsi:type="string">select</item>
                <item name="add_field" xsi:type="boolean">true</item>
