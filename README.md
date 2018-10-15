@@ -4,7 +4,7 @@ This extension adds the feature of category filter in admin product grid for Mag
 Tested and compatible with Magento 2.1.x and Magento 2.2.x.
 
 ### Installation
-* Download the latest release to `Utklasad/AdminProductGridCategoryFilter` in your `magentoroot/app/code` folder.
+* Download the latest release to `Utklasad/AdminProductGridCategoryFilter` in your `magentoroot/app/code` folder or use composer - `composer config repositories.adminproductgridcategorygilter vcs https://github.com/utklasad/magento2-admin-product-grid-category-filter.git` and `composer require utklasad/adminproductgridcategorygilter ~1.0.2`
 * Clean cache, run `php bin/magento setup:upgrade`, make sure the module is enabled with `php bin/magento module:enable Utklasad_AdminProductGridCategoryFilter` and deploy static files if you're in production mode.
 
 ### Screenshot
