@@ -11,7 +11,7 @@ Without composer
 
 With composer
 * `composer config repositories.adminproductgridcategorygilter vcs https://github.com/utklasad/magento2-admin-product-grid-category-filter.git`
-* `composer require utklasad/adminproductgridcategorygilter ~1.0.2`
+* `composer require utklasad/adminproductgridcategorygilter ~1.0.3`
 
 ### After installation
 * Clean cache, run `php bin/magento setup:upgrade`, make sure the module is enabled with `php bin/magento module:enable Utklasad_AdminProductGridCategoryFilter` and deploy static files if you're in production mode.
