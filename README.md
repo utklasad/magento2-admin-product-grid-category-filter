@@ -1,7 +1,7 @@
 # Category filter in admin product grid for Magento 2 (FREE).
 This extension adds the feature of category filter in admin product grid for Magento 2.
 
-Tested and compatible with Magento 2.1.x and Magento 2.2.x.
+Tested and compatible with Magento 2.1.x, 2.2.x and 2.3.x.
 
 ### Installation
 Choose one of the two installation types below
