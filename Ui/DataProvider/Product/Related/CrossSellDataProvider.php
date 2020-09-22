@@ -3,7 +3,7 @@
  * Copyright © Magento, Inc. All rights reserved.
  * See COPYING.txt for license details.
  */
-namespace Utklasad\AdminAbstractProductsCategoryFilter\Ui\DataProvider\Product\Related;
+namespace Utklasad\AdminProductGridCategoryFilter\Ui\DataProvider\Product\Related;
 
 use Magento\Framework\Api\Filter;
 
