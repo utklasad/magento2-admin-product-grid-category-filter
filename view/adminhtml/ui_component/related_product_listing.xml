@@ -18,9 +18,9 @@
       </filters>
    </listingToolbar>
    <columns name="product_columns" class="Magento\Catalog\Ui\Component\Listing\Columns">
-      <column name="category_id" class="EccDom\AdminAbstractProductsCategoryFilter\Ui\Component\Listing\Column\Category">
+      <column name="category_id" class="Utklasad\AdminAbstractProductsCategoryFilter\Ui\Component\Listing\Column\Category">
          <argument name="data" xsi:type="array">
-            <item name="options" xsi:type="object">EccDom\AdminAbstractProductsCategoryFilter\Model\Category\CategoryList</item>
+            <item name="options" xsi:type="object">Utklasad\AdminAbstractProductsCategoryFilter\Model\Category\CategoryList</item>
             <item name="config" xsi:type="array">
                <item name="filter" xsi:type="string">select</item>
                <item name="add_field" xsi:type="boolean">true</item>
