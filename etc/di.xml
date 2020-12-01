@@ -2,4 +2,7 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Catalog\Ui\DataProvider\Product\ProductDataProvider" type="Utklasad\AdminProductGridCategoryFilter\Ui\DataProvider\Product\ProductDataProvider" />
+    <preference for="Magento\Catalog\Ui\DataProvider\Product\Related\CrossSellDataProvider" type="Utklasad\AdminProductGridCategoryFilter\Ui\DataProvider\Product\Related\CrossSellDataProvider" />
+    <preference for="Magento\Catalog\Ui\DataProvider\Product\Related\RelatedDataProvider" type="Utklasad\AdminProductGridCategoryFilter\Ui\DataProvider\Product\Related\RelatedDataProvider" />
+    <preference for="Magento\Catalog\Ui\DataProvider\Product\Related\UpSellDataProvider" type="Utklasad\AdminProductGridCategoryFilter\Ui\DataProvider\Product\Related\UpSellDataProvider" />
 </config>

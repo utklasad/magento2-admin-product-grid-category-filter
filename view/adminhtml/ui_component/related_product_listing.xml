@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+ 
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+  <listingToolbar name="listing_top">
+      <filters name="listing_filters">
+         <argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+               <item name="templates" xsi:type="array">
+                  <item name="filters" xsi:type="array">
+                     <item name="select" xsi:type="array">
+                        <item name="component" xsi:type="string">Magento_Ui/js/form/element/ui-select</item>
+                        <item name="template" xsi:type="string">ui/grid/filters/elements/ui-select</item>
+                     </item>
+                  </item>
+               </item>
+            </item>
+         </argument>
+      </filters>
+   </listingToolbar>
+   <columns name="product_columns" class="Magento\Catalog\Ui\Component\Listing\Columns">
+      <column name="category_id" class="Utklasad\AdminProductGridCategoryFilter\Ui\Component\Listing\Column\Category">
+         <argument name="data" xsi:type="array">
+            <item name="options" xsi:type="object">Utklasad\AdminProductGridCategoryFilter\Model\Category\CategoryList</item>
+            <item name="config" xsi:type="array">
+               <item name="filter" xsi:type="string">select</item>
+               <item name="add_field" xsi:type="boolean">true</item>
+               <item name="label" xsi:type="string" translate="true">Categories</item>
+               <item name="sortOrder" xsi:type="number">75</item>
+               <item name="dataType" xsi:type="string">select</item>
+            </item>
+         </argument>
+      </column>
+   </columns>
+</listing>
