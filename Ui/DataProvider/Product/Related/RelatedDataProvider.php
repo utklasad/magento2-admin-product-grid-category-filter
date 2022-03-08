@@ -13,7 +13,7 @@ use Magento\Framework\Api\Filter;
  * @api
  * @since 101.0.0
  */
-class RelatedDataProvider extends AbstractDataProvider
+class RelatedDataProvider extends \Magento\Catalog\Ui\DataProvider\Product\Related\AbstractDataProvider
 {
     /**
      * {@inheritdoc
